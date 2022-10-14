@@ -13077,250 +13077,16 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Maddie Bonanno and Riley Martin</strong></p>
-<p>Migraine Comorbidity Crossover</p>
+<h1 id="Migraine-Comorbidity-Crossover"><em>Migraine Comorbidity Crossover</em><a class="anchor-link" href="#Migraine-Comorbidity-Crossover">&#182;</a></h1><p><strong>Maddie Bonanno and Riley Martin</strong></p>
 <p><a href="https://mscb25.github.io/datasci-final-maddieriley/">https://mscb25.github.io/datasci-final-maddieriley/</a></p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
-<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="s2">&quot;My Drive&quot;</span><span class="o">/</span><span class="n">Colab_Notebooks</span><span class="o">/</span><span class="n">yayfinal</span><span class="o">.</span><span class="n">ipynb</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] WARNING | pattern &#39;/content/drive/My Drive/Colab_Notebooks/yayfinal.ipynb&#39; matched no files
-This application is used to convert notebook files (*.ipynb)
-        to various other formats.
-
-        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.
-
-Options
-=======
-The options below are convenience aliases to configurable class-options,
-as listed in the &#34;Equivalent to&#34; description-line of the aliases.
-To see all configurable class-options for some &lt;cmd&gt;, use:
-    &lt;cmd&gt; --help-all
-
---debug
-    set log level to logging.DEBUG (maximize logging output)
-    Equivalent to: [--Application.log_level=10]
---show-config
-    Show the application&#39;s configuration (human-readable format)
-    Equivalent to: [--Application.show_config=True]
---show-config-json
-    Show the application&#39;s configuration (json format)
-    Equivalent to: [--Application.show_config_json=True]
---generate-config
-    generate default config file
-    Equivalent to: [--JupyterApp.generate_config=True]
--y
-    Answer yes to any questions instead of prompting.
-    Equivalent to: [--JupyterApp.answer_yes=True]
---execute
-    Execute the notebook prior to export.
-    Equivalent to: [--ExecutePreprocessor.enabled=True]
---allow-errors
-    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if &#39;--execute&#39; was specified, too.
-    Equivalent to: [--ExecutePreprocessor.allow_errors=True]
---stdin
-    read a single notebook file from stdin. Write the resulting notebook with default basename &#39;notebook.*&#39;
-    Equivalent to: [--NbConvertApp.from_stdin=True]
---stdout
-    Write notebook output to stdout instead of files.
-    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]
---inplace
-    Run nbconvert in place, overwriting the existing notebook (only 
-            relevant when converting to notebook format)
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]
---clear-output
-    Clear output of current file and save in place, 
-            overwriting the existing notebook.
-    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]
---no-prompt
-    Exclude input and output prompts from converted document.
-    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]
---no-input
-    Exclude input cells and output prompts from converted document. 
-            This mode is ideal for generating code-free reports.
-    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True]
---log-level=&lt;Enum&gt;
-    Set the log level by value or name.
-    Choices: any of [0, 10, 20, 30, 40, 50, &#39;DEBUG&#39;, &#39;INFO&#39;, &#39;WARN&#39;, &#39;ERROR&#39;, &#39;CRITICAL&#39;]
-    Default: 30
-    Equivalent to: [--Application.log_level]
---config=&lt;Unicode&gt;
-    Full path of a config file.
-    Default: &#39;&#39;
-    Equivalent to: [--JupyterApp.config_file]
---to=&lt;Unicode&gt;
-    The export format to be used, either one of the built-in formats
-            [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;]
-            or a dotted object name that represents the import path for an
-            `Exporter` class
-    Default: &#39;html&#39;
-    Equivalent to: [--NbConvertApp.export_format]
---template=&lt;Unicode&gt;
-    Name of the template file to use
-    Default: &#39;&#39;
-    Equivalent to: [--TemplateExporter.template_file]
---writer=&lt;DottedObjectName&gt;
-    Writer class used to write the 
-                                        results of the conversion
-    Default: &#39;FilesWriter&#39;
-    Equivalent to: [--NbConvertApp.writer_class]
---post=&lt;DottedOrNone&gt;
-    PostProcessor class used to write the
-                                        results of the conversion
-    Default: &#39;&#39;
-    Equivalent to: [--NbConvertApp.postprocessor_class]
---output=&lt;Unicode&gt;
-    overwrite base name use for output files.
-                can only be used when converting one notebook at a time.
-    Default: &#39;&#39;
-    Equivalent to: [--NbConvertApp.output_base]
---output-dir=&lt;Unicode&gt;
-    Directory to write output(s) to. Defaults
-                                  to output to the directory of each notebook. To recover
-                                  previous default behaviour (outputting to the current 
-                                  working directory) use . as the flag value.
-    Default: &#39;&#39;
-    Equivalent to: [--FilesWriter.build_directory]
---reveal-prefix=&lt;Unicode&gt;
-    The URL prefix for reveal.js (version 3.x).
-            This defaults to the reveal CDN, but can be any url pointing to a copy 
-            of reveal.js. 
-            For speaker notes to work, this must be a relative path to a local 
-            copy of reveal.js: e.g., &#34;reveal.js&#34;.
-            If a relative path is given, it must be a subdirectory of the
-            current directory (from which the server is run).
-            See the usage documentation
-            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)
-            for more details.
-    Default: &#39;&#39;
-    Equivalent to: [--SlidesExporter.reveal_url_prefix]
---nbformat=&lt;Enum&gt;
-    The nbformat version to write.
-            Use this to downgrade notebooks.
-    Choices: any of [1, 2, 3, 4]
-    Default: 4
-    Equivalent to: [--NotebookExporter.nbformat_version]
-
-Examples
---------
-
-    The simplest way to use nbconvert is
-
-            &gt; jupyter nbconvert mynotebook.ipynb
-
-            which will convert mynotebook.ipynb to the default format (probably HTML).
-
-            You can specify the export format with `--to`.
-            Options include [&#39;asciidoc&#39;, &#39;custom&#39;, &#39;html&#39;, &#39;latex&#39;, &#39;markdown&#39;, &#39;notebook&#39;, &#39;pdf&#39;, &#39;python&#39;, &#39;rst&#39;, &#39;script&#39;, &#39;slides&#39;].
-
-            &gt; jupyter nbconvert --to latex mynotebook.ipynb
-
-            Both HTML and LaTeX support multiple output templates. LaTeX includes
-            &#39;base&#39;, &#39;article&#39; and &#39;report&#39;.  HTML includes &#39;basic&#39; and &#39;full&#39;. You
-            can specify the flavor of the format used.
-
-            &gt; jupyter nbconvert --to html --template basic mynotebook.ipynb
-
-            You can also pipe the output to stdout, rather than a file
-
-            &gt; jupyter nbconvert mynotebook.ipynb --stdout
-
-            PDF is generated via latex
-
-            &gt; jupyter nbconvert mynotebook.ipynb --to pdf
-
-            You can get (and serve) a Reveal.js-powered slideshow
-
-            &gt; jupyter nbconvert myslides.ipynb --to slides --post serve
-
-            Multiple notebooks can be given at the command line in a couple of 
-            different ways:
-
-            &gt; jupyter nbconvert notebook*.ipynb
-            &gt; jupyter nbconvert notebook1.ipynb notebook2.ipynb
-
-            or you can specify the notebooks list in a config file, containing::
-
-                c.NbConvertApp.notebooks = [&#34;my_notebook.ipynb&#34;]
-
-            &gt; jupyter nbconvert --config mycfg.py
-
-To see all available configurables, use `--help-all`.
-
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">CalledProcessError</span>                        Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-13-59a4c89a9b7f&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>get_ipython<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">.</span>run_cell_magic<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;shell&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;&#39;</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;jupyter nbconvert --to html /content/drive/&#34;My Drive&#34;/Colab_Notebooks/yayfinal.ipynb\n&#39;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/IPython/core/interactiveshell.py</span> in <span class="ansi-cyan-fg">run_cell_magic</span><span class="ansi-blue-fg">(self, magic_name, line, cell)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2357</span>             <span class="ansi-green-fg">with</span> self<span class="ansi-blue-fg">.</span>builtin_trap<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">   2358</span>                 args <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">(</span>magic_arg_s<span class="ansi-blue-fg">,</span> cell<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-fg">-&gt; 2359</span><span class="ansi-red-fg">                 </span>result <span class="ansi-blue-fg">=</span> fn<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2360</span>             <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">   2361</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">_shell_cell_magic</span><span class="ansi-blue-fg">(args, cmd)</span>
-<span class="ansi-green-intense-fg ansi-bold">    107</span>   result <span class="ansi-blue-fg">=</span> _run_command<span class="ansi-blue-fg">(</span>cmd<span class="ansi-blue-fg">,</span> clear_streamed_output<span class="ansi-blue-fg">=</span><span class="ansi-green-fg">False</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    108</span>   <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> parsed_args<span class="ansi-blue-fg">.</span>ignore_errors<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">--&gt; 109</span><span class="ansi-red-fg">     </span>result<span class="ansi-blue-fg">.</span>check_returncode<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    110</span>   <span class="ansi-green-fg">return</span> result
-<span class="ansi-green-intense-fg ansi-bold">    111</span> 
-
-<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/google/colab/_system_commands.py</span> in <span class="ansi-cyan-fg">check_returncode</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    133</span>     <span class="ansi-green-fg">if</span> self<span class="ansi-blue-fg">.</span>returncode<span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">    134</span>       raise subprocess.CalledProcessError(
-<span class="ansi-green-fg">--&gt; 135</span><span class="ansi-red-fg">           returncode=self.returncode, cmd=self.args, output=self.output)
-</span><span class="ansi-green-intense-fg ansi-bold">    136</span> 
-<span class="ansi-green-intense-fg ansi-bold">    137</span>   <span class="ansi-green-fg">def</span> _repr_pretty_<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> p<span class="ansi-blue-fg">,</span> cycle<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>  <span class="ansi-red-fg"># pylint:disable=unused-argument</span>
-
-<span class="ansi-red-fg">CalledProcessError</span>: Command &#39;jupyter nbconvert --to html /content/drive/&#34;My Drive&#34;/Colab_Notebooks/yayfinal.ipynb
-&#39; returned non-zero exit status 255.</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Project Goals:</strong></p>
-
+<h2 id="Project-Goals:"><strong>Project Goals:</strong><a class="anchor-link" href="#Project-Goals:">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13335,8 +13101,7 @@ To see all available configurables, use `--help-all`.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Collaboration Plan:</strong></p>
-
+<h3 id="Collaboration-Plan:"><strong>Collaboration Plan:</strong><a class="anchor-link" href="#Collaboration-Plan:">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13350,7 +13115,7 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13387,9 +13152,18 @@ To see all available configurables, use `--help-all`.
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Data:"><strong>The Data:</strong><a class="anchor-link" href="#The-Data:">&#182;</a></h2><p>We decided to collect three seperate data tables from the "Personal Genome Project" site (located at <a href="https://my.pgp-hms.org/google_surveys">https://my.pgp-hms.org/google_surveys</a>). The participant IDs are consistent throughout the varying files, allowing comorbidities in each subset to be easily compared. We chose to use the 2012 Nervous System survey (with IDs and conditions), the 2012 Circulatory System survey (with IDs and conditions), and the 2012 Endocrine, Metabolic, Nutritional, and Immunity survey (with IDs and conditions).</p>
+<p>Although there are a number of cool datasets on this site, we chose these three because they incorperated or directly impacted the progression of migraines [migraines are a nervous system disorder, migraines lead to changes in blood circulation, and migraines are drastically impacted by fluctuating hormones]. Later on, we hope to expand to other datasets that may be relevant for wider crossreferencing.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Nerv_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;PGPTrait&amp;DiseaseSurvey2012_NervousSystem-20181010220056 (1).csv&quot;</span><span class="p">)</span> <span class="c1"># Participant IDs and Nervous system conditions</span>
@@ -13408,13 +13182,13 @@ To see all available configurables, use `--help-all`.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-1a0d8504-d6d8-439a-b4ea-810595be4874">
+  <div id="df-c35958e5-cc04-4004-9d62-8b2d94530a93">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13485,7 +13259,7 @@ To see all available configurables, use `--help-all`.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-1a0d8504-d6d8-439a-b4ea-810595be4874')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-c35958e5-cc04-4004-9d62-8b2d94530a93')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13536,12 +13310,12 @@ To see all available configurables, use `--help-all`.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-1a0d8504-d6d8-439a-b4ea-810595be4874 button.colab-df-convert');
+          document.querySelector('#df-c35958e5-cc04-4004-9d62-8b2d94530a93 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-1a0d8504-d6d8-439a-b4ea-810595be4874');
+          const element = document.querySelector('#df-c35958e5-cc04-4004-9d62-8b2d94530a93');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13571,7 +13345,7 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Circ_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13587,13 +13361,13 @@ To see all available configurables, use `--help-all`.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-29202acc-b030-4f8c-976e-32de6286af22">
+  <div id="df-9d186f0d-26b4-49d0-91bd-d4ad00eddd55">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13664,7 +13438,7 @@ To see all available configurables, use `--help-all`.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-29202acc-b030-4f8c-976e-32de6286af22')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-9d186f0d-26b4-49d0-91bd-d4ad00eddd55')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13715,12 +13489,12 @@ To see all available configurables, use `--help-all`.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-29202acc-b030-4f8c-976e-32de6286af22 button.colab-df-convert');
+          document.querySelector('#df-9d186f0d-26b4-49d0-91bd-d4ad00eddd55 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-29202acc-b030-4f8c-976e-32de6286af22');
+          const element = document.querySelector('#df-9d186f0d-26b4-49d0-91bd-d4ad00eddd55');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13750,7 +13524,7 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Endo_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -13766,13 +13540,13 @@ To see all available configurables, use `--help-all`.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-e679854d-9b25-46b0-9487-7fd3178a3f12">
+  <div id="df-1eb15395-b8fe-4d7e-ade0-f2b2b9f34056">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -13843,7 +13617,7 @@ To see all available configurables, use `--help-all`.
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e679854d-9b25-46b0-9487-7fd3178a3f12')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-1eb15395-b8fe-4d7e-ade0-f2b2b9f34056')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -13894,12 +13668,12 @@ To see all available configurables, use `--help-all`.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e679854d-9b25-46b0-9487-7fd3178a3f12 button.colab-df-convert');
+          document.querySelector('#df-1eb15395-b8fe-4d7e-ade0-f2b2b9f34056 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e679854d-9b25-46b0-9487-7fd3178a3f12');
+          const element = document.querySelector('#df-1eb15395-b8fe-4d7e-ade0-f2b2b9f34056');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -13927,9 +13701,17 @@ To see all available configurables, use `--help-all`.
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>After reading in the datasets, we dropped unnecessary columns for easier analysis. In this instance, the "Do nit Touch", "Timestamp" and "Other condition not listed here" are not pertinant to finding comorbidities.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Nerv_data</span> <span class="o">=</span> <span class="n">Nerv_data</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;Do not touch!&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1">#dropping unncessary columns</span>
@@ -13947,10 +13729,72 @@ To see all available configurables, use `--help-all`.
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-fg">&lt;ipython-input-29-a493b418ab16&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>Nerv_data <span class="ansi-blue-fg">=</span> Nerv_data<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Do not touch!&#34;</span><span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span> <span class="ansi-red-fg">#dropping unncessary columns</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> Nerv_data <span class="ansi-blue-fg">=</span> Nerv_data<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Timestamp&#34;</span><span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> Nerv_data <span class="ansi-blue-fg">=</span> Nerv_data<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Other condition not listed here?&#34;</span><span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> Circ_data <span class="ansi-blue-fg">=</span> Circ_data<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Do not touch!&#34;</span><span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> Circ_data <span class="ansi-blue-fg">=</span> Circ_data<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Timestamp&#34;</span><span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">)</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/pandas/util/_decorators.py</span> in <span class="ansi-cyan-fg">wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
+<span class="ansi-green-intense-fg ansi-bold">    309</span>                     stacklevel<span class="ansi-blue-fg">=</span>stacklevel<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">    310</span>                 )
+<span class="ansi-green-fg">--&gt; 311</span><span class="ansi-red-fg">             </span><span class="ansi-green-fg">return</span> func<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    312</span> 
+<span class="ansi-green-intense-fg ansi-bold">    313</span>         <span class="ansi-green-fg">return</span> wrapper
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/pandas/core/frame.py</span> in <span class="ansi-cyan-fg">drop</span><span class="ansi-blue-fg">(self, labels, axis, index, columns, level, inplace, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4911</span>             level<span class="ansi-blue-fg">=</span>level<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   4912</span>             inplace<span class="ansi-blue-fg">=</span>inplace<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-fg">-&gt; 4913</span><span class="ansi-red-fg">             </span>errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">   4914</span>         )
+<span class="ansi-green-intense-fg ansi-bold">   4915</span> 
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">drop</span><span class="ansi-blue-fg">(self, labels, axis, index, columns, level, inplace, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4148</span>         <span class="ansi-green-fg">for</span> axis<span class="ansi-blue-fg">,</span> labels <span class="ansi-green-fg">in</span> axes<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   4149</span>             <span class="ansi-green-fg">if</span> labels <span class="ansi-green-fg">is</span> <span class="ansi-green-fg">not</span> <span class="ansi-green-fg">None</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 4150</span><span class="ansi-red-fg">                 </span>obj <span class="ansi-blue-fg">=</span> obj<span class="ansi-blue-fg">.</span>_drop_axis<span class="ansi-blue-fg">(</span>labels<span class="ansi-blue-fg">,</span> axis<span class="ansi-blue-fg">,</span> level<span class="ansi-blue-fg">=</span>level<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4151</span> 
+<span class="ansi-green-intense-fg ansi-bold">   4152</span>         <span class="ansi-green-fg">if</span> inplace<span class="ansi-blue-fg">:</span>
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/pandas/core/generic.py</span> in <span class="ansi-cyan-fg">_drop_axis</span><span class="ansi-blue-fg">(self, labels, axis, level, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4183</span>                 new_axis <span class="ansi-blue-fg">=</span> axis<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span>labels<span class="ansi-blue-fg">,</span> level<span class="ansi-blue-fg">=</span>level<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4184</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 4185</span><span class="ansi-red-fg">                 </span>new_axis <span class="ansi-blue-fg">=</span> axis<span class="ansi-blue-fg">.</span>drop<span class="ansi-blue-fg">(</span>labels<span class="ansi-blue-fg">,</span> errors<span class="ansi-blue-fg">=</span>errors<span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4186</span>             result <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>reindex<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span><span class="ansi-blue-fg">{</span>axis_name<span class="ansi-blue-fg">:</span> new_axis<span class="ansi-blue-fg">}</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   4187</span> 
+
+<span class="ansi-green-fg">/usr/local/lib/python3.7/dist-packages/pandas/core/indexes/base.py</span> in <span class="ansi-cyan-fg">drop</span><span class="ansi-blue-fg">(self, labels, errors)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6015</span>         <span class="ansi-green-fg">if</span> mask<span class="ansi-blue-fg">.</span>any<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-intense-fg ansi-bold">   6016</span>             <span class="ansi-green-fg">if</span> errors <span class="ansi-blue-fg">!=</span> <span class="ansi-blue-fg">&#34;ignore&#34;</span><span class="ansi-blue-fg">:</span>
+<span class="ansi-green-fg">-&gt; 6017</span><span class="ansi-red-fg">                 </span><span class="ansi-green-fg">raise</span> KeyError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">f&#34;{labels[mask]} not found in axis&#34;</span><span class="ansi-blue-fg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">   6018</span>             indexer <span class="ansi-blue-fg">=</span> indexer<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">~</span>mask<span class="ansi-blue-fg">]</span>
+<span class="ansi-green-intense-fg ansi-bold">   6019</span>         <span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>delete<span class="ansi-blue-fg">(</span>indexer<span class="ansi-blue-fg">)</span>
+
+<span class="ansi-red-fg">KeyError</span>: &#34;[&#39;Do not touch!&#39;] not found in axis&#34;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Nerv_data</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Participant ID&quot;</span><span class="p">,</span> <span class="s2">&quot;Nervous System Conditions&quot;</span><span class="p">]</span> <span class="c1"># distinguishing column names</span>
@@ -13963,9 +13807,17 @@ To see all available configurables, use `--help-all`.
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We then joined the three datasets on Participant ID, finding the conditions of each patient across the subsets.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">Nerv_Circ_data</span> <span class="o">=</span> <span class="n">Nerv_data</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">Circ_data</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;Participant ID&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;inner&quot;</span><span class="p">)</span>
@@ -13983,13 +13835,13 @@ To see all available configurables, use `--help-all`.
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-b4336cad-6ff6-4b99-b676-7772faeafc70">
+  <div id="df-3a12073d-d640-4e1a-96c9-6f5fd05c2fe5">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14097,7 +13949,7 @@ To see all available configurables, use `--help-all`.
 </table>
 <p>2958 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-b4336cad-6ff6-4b99-b676-7772faeafc70')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3a12073d-d640-4e1a-96c9-6f5fd05c2fe5')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -14148,12 +14000,12 @@ To see all available configurables, use `--help-all`.
 
       <script>
         const buttonEl =
-          document.querySelector('#df-b4336cad-6ff6-4b99-b676-7772faeafc70 button.colab-df-convert');
+          document.querySelector('#df-3a12073d-d640-4e1a-96c9-6f5fd05c2fe5 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-b4336cad-6ff6-4b99-b676-7772faeafc70');
+          const element = document.querySelector('#df-3a12073d-d640-4e1a-96c9-6f5fd05c2fe5');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14183,7 +14035,7 @@ To see all available configurables, use `--help-all`.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">full_data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
@@ -14224,7 +14076,7 @@ memory usage: 115.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">full_data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14240,13 +14092,13 @@ memory usage: 115.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-  <div id="df-32bc99fd-efa4-4e90-a830-5923a998adcb">
+  <div id="df-52716106-0d8e-4575-9010-9ac73b292b9c">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -14304,7 +14156,7 @@ memory usage: 115.5+ KB
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-32bc99fd-efa4-4e90-a830-5923a998adcb')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-52716106-0d8e-4575-9010-9ac73b292b9c')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -14355,12 +14207,12 @@ memory usage: 115.5+ KB
 
       <script>
         const buttonEl =
-          document.querySelector('#df-32bc99fd-efa4-4e90-a830-5923a998adcb button.colab-df-convert');
+          document.querySelector('#df-52716106-0d8e-4575-9010-9ac73b292b9c button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-32bc99fd-efa4-4e90-a830-5923a998adcb');
+          const element = document.querySelector('#df-52716106-0d8e-4575-9010-9ac73b292b9c');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -14390,7 +14242,7 @@ memory usage: 115.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">mig_w_aura</span> <span class="o">=</span> <span class="n">full_data</span><span class="p">[</span><span class="s1">&#39;Nervous System Conditions&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Migraine with aura&#39;</span><span class="p">,</span> <span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">na</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1"># Any participants with &quot;Migraines with aura&quot; results as True</span>
@@ -14431,7 +14283,7 @@ memory usage: 115.5+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">plot_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">w_sum</span><span class="p">,</span><span class="n">no_sum</span><span class="p">,</span><span class="n">rays_sum</span><span class="p">,</span><span class="n">hypo_sum</span><span class="p">,</span><span class="n">hypo_mig_w_sum</span><span class="p">,</span><span class="n">hypo_mig_no_sum</span><span class="p">,</span><span class="n">hypo_mig_w_ray_sum</span><span class="p">,</span><span class="n">hypo_mig_no_ray_sum</span><span class="p">]</span> 
@@ -14450,7 +14302,7 @@ memory usage: 115.5+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
 
 
 
@@ -14491,16 +14343,63 @@ memory usage: 115.5+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>So far, we've managed to collect valuable data relating the occurance of migraine</p>
+<p>So far, we've managed to collect valuable data relating the occurance of migraine to various coexisting medical conditions. Through the merging of these three datasets, we recognized that migraines are common among patients with endocrine disorders, more specifically hypothyroidism. Whether this is correlation or causation is a question for the next milestone as we continue to analyze the data.</p>
 <p>Some current questions we are contemplating are:</p>
 <ul>
 <li>What is the most common comorbidity in patients with migraines?</li>
 <li>Do health histories vary between patients who have migraine with aura vs migraine without aura?</li>
 <li>How can this information be used to make informed decisions regarding medication, healthcare, and further medical support?</li>
 </ul>
+<p>We hope to incorperate more data in the future to successfully answer these questions.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">shell</span>
+<span class="n">jupyter</span> <span class="n">nbconvert</span> <span class="o">--</span><span class="n">to</span> <span class="n">html</span> <span class="o">/</span><span class="n">content</span><span class="o">/</span><span class="n">drive</span><span class="o">/</span><span class="s2">&quot;My Drive&quot;</span><span class="o">/</span><span class="n">Colab_Notebooks</span><span class="o">/</span><span class="n">yayfinal</span><span class="o">.</span><span class="n">ipynb</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook /content/drive/My Drive/Colab_Notebooks/yayfinal.ipynb to html
+[NbConvertApp] Writing 344908 bytes to /content/drive/My Drive/Colab_Notebooks/yayfinal.html
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[&nbsp;]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre></pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     </div>
   </div>
