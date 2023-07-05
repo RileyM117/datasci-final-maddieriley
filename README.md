@@ -1,4 +1,4 @@
 # datasci-final-maddieriley
-Migraine Comorbidity and Genetic Analysis: Data Science Final Tutorial
+Migraine Comorbidity and Genetic Analysis: Data Science Final Tutorial (December, 2022)
 
-If you are unable to access the deployment, the link to the website is: https://mscb25.github.io/datasci-final-maddieriley/
+The link to the project website is: https://mscb25.github.io/datasci-final-maddieriley/
